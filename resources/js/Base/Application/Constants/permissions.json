@@ -1,0 +1,122 @@
+{
+    "deactivate-sirens": {
+        "description": "User can instruct all sirens on the site to deactivate",
+        "preset_role": ["manager"]
+    },
+    "edit-devices": {
+        "description": "User can change basic details for a device such as name and location",
+        "preset_role": ["manager"]
+    },
+    "initialize-devices": {
+        "description": "User can reset the device if required",
+        "preset_role": []
+    },
+    "view-devices": {
+        "description": "User can view all the devices that are learned in and enabled in the system",
+        "preset_role": ["manager", "worker"]
+    },
+    "view-all-device-details": {
+        "description": "User can view the power and connectivity status of all the devices that are learned in and enabled in the system",
+        "preset_role": ["manager"]
+    },
+    "end-evacuations": {
+        "description": "Gives permission to the user to be able to END an evacuation via the phone app",
+        "preset_role": ["manager"]
+    },
+    "geofenced-nurse-call-only": {
+        "description": "The user will NOT receive Nurse Call notifications (SMS or phone app) if the site has geofencing set up and the user's location services clearly indicate they are not on site",
+        "preset_role": [],
+        "notes": "This permission is only allowed when the Site has Geofencing enabled"
+    },
+    "geofenced-evacuations-only": {
+        "description": "The user will NOT receive evacuation notifications (SMS or phone app) if the site has geofencing set up and the user's location services clearly indicate they are not on site",
+        "preset_role": [],
+        "notes": "This permission is only allowed when the Site has Geofencing enabled"
+    },
+    "receive-evacuation-in-app-notifications": {
+        "description": "The user will receive ALL evacuation notifications (SMS or phone app)",
+        "preset_role": ["manager", "worker"]
+    },
+    "start-evacuations": {
+        "description": "Gives permission to the user to be able to START an evacuation via the phone app",
+        "preset_role": ["manager"]
+    },
+    "start-lockdowns": {
+        "description": "Gives permission to the user to be able to START a site lockdown via the phone app",
+        "preset_role": [],
+        "notes": "This permission is only allowed when the Site has Lockdowns enabled"
+    },
+    "end-lockdowns": {
+        "description": "Gives permission to the user to be able to END a site lockdown via the phone app",
+        "preset_role": [],
+        "notes": "This permission is only allowed when the Site has Lockdowns enabled"
+    },
+    "escalate-lockdowns": {
+        "description": "Gives permission to the user to be able to change a lockdown to an evacuation alert via the phone app",
+        "preset_role": [],
+        "notes": "This permission is only allowed when the Site has Lockdowns enabled"
+    },
+    "receive-lockdown-in-app-notifications": {
+        "description": "The user will receive ALL lockdown notifications (SMS or phone app)",
+        "preset_role": []
+    },
+    "receive-all-nurse-call-accept-in-app-notifications": {
+        "description": "The user will receive notifications of ALL acceptions to a Nurse Call alert (SMS or phone app)",
+        "preset_role": ["manager"]
+    },
+    "receive-nurse-call-in-app-notifications": {
+        "description": "The user will receive notifications of ALL Nurse Call alerts (SMS or phone app)",
+        "preset_role": ["manager"]
+    },
+    "receive-relevant-nurse-call-accept-in-app-notifications": {
+        "description": "The user will receive notifications of ALL acceptions to any Nurse Call alert they triggered (SMS or phone app)",
+        "preset_role": [],
+        "notes": "To enable this function please speak to Vanguard Wireless about your software subscription"
+    },
+    "start-nurse-calls": {
+        "description": "Gives permission  to the user to START a Nurse Call alert via the phone app",
+        "preset_role": [],
+        "notes": "To enable this function please speak to Vanguard Wireless about your software subscription"
+    },
+    "edit-sites": {
+        "description": "Gives permission to the user to change settings for the site via the phone app",
+        "preset_role": []
+    },
+    "view-logs": {
+        "description": "User can see the activity log for the site",
+        "preset_role": []
+    },
+    "edit-logs": {
+        "description": "User can edit the activity log for the site (must have log viewing permissions)",
+        "preset_role": []
+    },
+    "view-tcu-status": {
+        "description": "If a TCU is connected to the system, this gives the user permission to view its status and other details",
+        "preset_role": ["manager"],
+        "notes": "Only available to Sites with TCU"
+    },
+    "view-operation-status": {
+        "description": "If a TCU is connected to the system, this gives the user permission to view the maintenance schedule via the phone app",
+        "preset_role": ["manager"]
+    },
+    "grant-permissions": {
+        "description": "Gives permission to the user to edit permissions for other users. NOTE we recommend only granting this to System Admin Managers and senior members of your team.",
+        "preset_role": ["manager"]
+    },
+    "add-users": {
+        "description": "Gives permission to the user to ADD other users (must have viewing users permissions)",
+        "preset_role": ["manager"]
+    },
+    "view-users": {
+        "description": "User can view other users who are registered for that specific site",
+        "preset_role": ["manager"]
+    },
+    "edit-users": {
+        "description": "Gives permission to the user to EDIT the details, SMS notifications, and permissions of other users (must have viewing users permissions)",
+        "preset_role": ["manager"]
+    },
+    "remove-users": {
+        "description": "Gives permission to the user to REMOVE a user from that specific site (must have viewing users permissions)",
+        "preset_role": ["manager"]
+    }
+}
